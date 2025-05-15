@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Healthcare Management System</h1>
+        </div>
+    </header>
+    <main>
+        <div class="dashboard">
+            <aside class="sidebar">
+                <h2>Menu</h2>
+                <ul>
+                    <li data-action="1">Add Patient</li>
+                    <li data-action="11">Show Patient</li> <!-- Added new option -->
+                    <li data-action="2">Schedule Appointment</li>
+                    <li data-action="3">Add Resource</li>
+                    <li data-action="4">Check Resource Availability</li>
+                    <li data-action="5">Patient Check-In</li>
+                    <li data-action="6">Next Check-In</li>
+                    <li data-action="7">Add Healthcare Provider</li>
+                    <li data-action="8">Show Hierarchy</li>
+                    <li data-action="9">Add Collaboration</li>
+                    <li data-action="10">Show Collaborations</li>
+                </ul>
+            </aside>
+            <section class="content">
+                <h2 id="form-title">Select an Action</h2>
+                <form id="action-form" class="hidden">
+                    <div id="dynamic-inputs" class="input-fields"></div>
+                    <button type="button" id="execute" class="btn-primary">Execute</button>
+                </form>
+                <div id="output" class="output"></div>
+            </section>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
